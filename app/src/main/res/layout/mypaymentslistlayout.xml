@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:background="@drawable/custom_edit_text"
+    android:backgroundTint="#C6E4FF"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/myPaymentslistlayoutbackground"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:src="@drawable/baseline_circle_24"
+        android:id="@+id/MyPaymentsProductImage"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/MyPaymentsProductName"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/MyPaymentsProductImage"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingStart="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:translationY="-32dp" />
+
+    <TextView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="Amount :"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_below="@id/MyPaymentsProductName"
+        android:layout_toEndOf="@id/MyPaymentsProductImage"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/MyPaymentsProductAmount"
+        android:translationY="-26dp"
+        android:paddingStart="@dimen/_10sdp"
+
+        />
+
+
+    <TextView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="Payment Date :"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_below="@id/MyPaymentsProductAmount"
+        android:layout_toEndOf="@id/MyPaymentsProductImage"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/MyPaymentsProductSubInformation"
+        android:translationY="-22dp"
+        android:paddingStart="@dimen/_10sdp"
+
+        />
+
+    <TextView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:text="Payment Mode :"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_below="@id/MyPaymentsProductSubInformation"
+        android:layout_toEndOf="@id/MyPaymentsProductImage"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/MyPaymentsProductInvoicePaymentDateInformation_PaymentModeType"
+        android:translationY="-20dp"
+        android:paddingStart="@dimen/_10sdp"
+
+        />
+
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/MyPaymentsProductImage"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_250sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/MyPaymentsProductNextBtn"
+        android:src="@drawable/rightarrow"
+
+        android:background="#545F9E62"
+        />
+
+
+
+</RelativeLayout>
+

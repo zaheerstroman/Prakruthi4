@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:background="@drawable/custom_edit_text"
+    android:backgroundTint="#C6E4FF"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/cartlistlayoutbackground"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:src="@drawable/baseline_circle_24"
+        android:id="@+id/MyOrdersProductImage"
+
+        />
+
+    <TextView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:text="Plastic Glass Name"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_toEndOf="@id/MyOrdersProductImage"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:id="@+id/MyOrdersProductName"
+        android:translationY="-8dp"
+        />
+
+    <TextView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:text="Sub information Details"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_below="@id/MyOrdersProductName"
+        android:layout_toEndOf="@id/MyOrdersProductImage"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/MyOrdersProductSubInformation"
+        android:translationY="-8dp"/>
+
+    <TextView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:text="Amount : 400"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_below="@id/MyOrdersProductSubInformation"
+        android:layout_toEndOf="@id/MyOrdersProductImage"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/MyOrdersProductSubAmount"
+        android:translationY="-8dp"/>
+
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_toEndOf="@id/MyOrdersProductImage"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_190sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/MyOrdersProductNextBtn"
+        android:src="@drawable/my_orders_front_arrow_vector"
+        android:requiresFadingEdge="vertical"
+        android:background="#545F9E62"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Pasword_Updated_Animation">
+
+    <TextView
+        android:id="@+id/txt_24_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/ibarra_real_nova"
+        android:text="Password Updated"
+        android:textAlignment="center"
+        android:textColor="@color/Primary"
+        android:textSize="@dimen/_30sdp" />
+
+    <ImageView
+        android:id="@+id/gif_pasword_updated_image"
+        android:layout_width="@dimen/_360sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/otp_verification_animation_640"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/txt_24_hour"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_pasword_updated_gifimage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="#fff"
+        android:src="@drawable/pasword_updated_animation_640"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/txt_24_hour"
+        />
+
+    <TextView
+        android:id="@+id/txt_your_pasword_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ibarra_real_nova"
+        android:text="Your password has been Updated!"
+        android:textAlignment="center"
+        android:textColor="@color/Primary"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/gif_pasword_updated_gifimage"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_update_text"
+        android:layout_below="@id/txt_your_pasword_updated"
+
+        android:text="Login"
+        android:textAllCaps="false"
+        android:fontFamily="@font/ibarra_real_nova"
+        android:textSize="@dimen/_20sdp"
+        android:background="@drawable/custom_shape_btn"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_73sdp"
+        android:layout_marginEnd="@dimen/_73sdp"
+        android:layout_marginTop="@dimen/_31sdp"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

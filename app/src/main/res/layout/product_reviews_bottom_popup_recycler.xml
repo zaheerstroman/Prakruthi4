@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Secondary_less"
+    android:layout_margin="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/baseline_person_24" />
+
+    <com.willy.ratingbar.RotationRatingBar
+        android:id="@+id/ReviewRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/circleImageView"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:srb_numStars="5"
+        app:srb_minimumStars="0"
+        app:srb_starWidth="@dimen/_10sdp"
+        app:srb_starHeight="@dimen/_10sdp"
+        app:srb_starPadding="@dimen/_3sdp"
+        app:srb_stepSize="0.01"
+        app:srb_isIndicator="false"
+        android:clickable="false"
+        app:srb_clickable="false"
+        app:srb_scrollable="false"
+        app:srb_drawableEmpty="@drawable/outline_star_outline_24"
+        app:srb_drawableFilled="@drawable/star_vector"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReviewRatingBar"
+        android:layout_toEndOf="@id/circleImageView"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="Test Text"
+        android:textSize="16sp" />
+
+</RelativeLayout>

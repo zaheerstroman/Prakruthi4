@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:background="@drawable/custom_edit_text"
+    android:backgroundTint="#C6E4FF"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/qty_cartlistlayoutbackground"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:src="@drawable/baseline_circle_24"
+        android:id="@+id/MyOrdersQtyProductImage"
+
+        />
+
+    <TextView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:text="Plastic Glass"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_toEndOf="@id/MyOrdersQtyProductImage"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:id="@+id/MyOrdersQtyProductName"
+        android:translationY="-8dp"
+        />
+
+    <TextView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:text="Sub information"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_below="@id/MyOrdersQtyProductName"
+        android:layout_toEndOf="@id/MyOrdersQtyProductImage"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/MyOrdersQtyProductSubInformation"
+        android:translationY="-8dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/MyOrdersQtyProductSubInformation"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/MyOrdersQtyProductNextBtn"
+        android:src="@drawable/my_orders_front_arrow_vector"
+        android:requiresFadingEdge="vertical"
+        android:text="Tot Qty"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/MyOrdersQtyProductSubInformation"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/QuantityEditText"
+        android:inputType="number"
+        android:layout_below="@+id/MyOrdersQtyProductNextBtn"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/MyOrdersQtyProductNextBtn"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/AvtQtyTextView"
+        android:src="@drawable/my_orders_front_arrow_vector"
+        android:requiresFadingEdge="vertical"
+        android:text="Avl Qty"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        />
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/QuantityEditText"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/AvtQtyRemainingEditText"
+        android:inputType="number"
+        android:layout_below="@+id/AvtQtyTextView"
+        android:layout_alignParentEnd="true"
+        />
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/QuantityEditText"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/AvtQtyRemainingEditText1"
+        android:inputType="number"
+        android:layout_below="@+id/AvtQtyTextView"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+
+
+
+
+
+</RelativeLayout>

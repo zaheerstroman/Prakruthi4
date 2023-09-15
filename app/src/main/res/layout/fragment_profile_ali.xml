@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_backgound"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ui.profile.ProfileFragmentAli"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/baseline_login_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/Logout"/>
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/baseline_edit_24"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/EditProfile"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:gravity="center"
+            android:text="ID : #2256291"
+            android:textSize="@dimen/_30sdp" />
+
+        <LinearLayout
+            android:id="@+id/layout_all"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/txt_id"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="#C6E4FF"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_my_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/myorder_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Orders"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_my_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Address"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                app:drawableTopCompat="@drawable/my_address_vector" />
+
+            <TextView
+                android:id="@+id/tv_my_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/outline_favorite_24"
+                android:drawableTint="@color/Primary"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Wishlist"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_payments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/mypayment_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Payment"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_all"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Services"
+            android:textSize="@dimen/_30sdp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_all_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/tv_service"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="#C6E4FF"
+            android:gravity="center"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/feedback_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Feedback"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Support"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                app:drawableTopCompat="@drawable/support_vector" />
+
+            <TextView
+                android:id="@+id/tv_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_support"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/privacy_policy_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Privacy Policy"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_About_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_privacy_policy"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/aboutus_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="About Us"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_Terms_Conditions"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Terms And Conditions"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                app:drawableTopCompat="@drawable/terms_and_conditions_icon"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_recent_Products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_all_2"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Recent Products"
+            android:textColor="@color/Primary"
+            android:textSize="@dimen/_20sdp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_all_2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="View All"
+            android:textColor="@color/Green"
+            android:visibility="gone"
+            android:textSize="@dimen/_20sdp" />
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/ProfileHomeProductsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_recent_Products"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:shimmer_demo_child_count="10"
+            app:shimmer_demo_layout="@layout/homepage_product_recycle_view_loading"
+            app:shimmer_demo_layout_manager_type="grid"
+            app:spanCount="2"
+            tools:itemCount="10"
+            tools:listitem="@layout/homepage_product_recycle_view" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

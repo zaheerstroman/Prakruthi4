@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Your RecyclerView -->
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/_20sdp"
+        android:requiresFadingEdge="vertical"
+        app:shimmer_demo_child_count="5"
+        android:layout_below="@id/Write"
+        android:layout_above="@id/emptyview"
+        app:shimmer_demo_layout_manager_type="linear_vertical"
+        tools:listitem="@layout/product_reviews_bottom_popup_recycler" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="@color/Secondary_less"
+        android:text="Write a Review"
+        android:layout_alignParentTop="true"
+        android:id="@+id/Write"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:id="@+id/emptyview"/>
+
+</RelativeLayout>

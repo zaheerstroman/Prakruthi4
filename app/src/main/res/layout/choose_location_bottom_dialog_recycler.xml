@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/Secondary_less"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:text="Zaheer"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/choose_location_bottom_dialog_recycler_name"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:text="Ameerpet , Hyderabad 500075"
+        android:textColor="@color/black"
+        android:id="@+id/choose_location_bottom_dialog_recycler_address"
+        android:layout_below="@id/choose_location_bottom_dialog_recycler_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:text="Default Address"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        android:id="@+id/choose_location_bottom_dialog_recycler_Default"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

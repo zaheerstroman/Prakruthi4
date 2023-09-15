@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.home.HomeFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="@color/Secondary"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableEnd="@drawable/round_search_24"
+        android:paddingEnd="@dimen/_5sdp"
+        android:id="@+id/Search"
+        android:editable="false"
+        android:hint="Search"
+        android:paddingStart="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Search"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:singleLine="true"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:spinner_arrow_tint="@color/black"
+        android:hint=""
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:id="@+id/DeleverHomeLocation"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/roboto_medium"
+        android:ellipsize = "marquee"
+        android:fadingEdge = "horizontal"
+        android:marqueeRepeatLimit = "marquee_forever"
+        android:scrollHorizontally = "true"
+        />
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="horizontal"
+        android:layout_below="@id/DeleverHomeLocation"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:shimmer_demo_layout="@layout/homepage_category_recycle_view_loading"
+        tools:itemCount="10"
+        app:shimmer_demo_layout_manager_type="linear_horizontal"
+        app:shimmer_demo_child_count="10"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:id="@+id/HomeCategoryRecyclerview"
+        android:layout_marginEnd="@dimen/_3sdp"
+        tools:listitem="@layout/homepage_category_recycle_view"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/HomeCategoryRecyclerview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/HomeBannerPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/Grey"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:orientation="horizontal"
+                />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dotsColor="@color/white"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="16dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                android:layout_below="@id/HomeBannerPager"
+                android:layout_centerHorizontal="true"
+                app:selectedDotColor="@color/Primary"
+                android:layout_marginTop="-20dp"
+                app:progressMode="true" />
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/HomeProductsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dots_indicator"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:shimmer_demo_child_count="10"
+                app:shimmer_demo_layout="@layout/homepage_product_recycle_view_loading"
+                app:shimmer_demo_layout_manager_type="grid"
+                app:spanCount="2"
+                tools:itemCount="10"
+                tools:listitem="@layout/homepage_product_recycle_view" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

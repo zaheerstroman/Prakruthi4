@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_140sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="match_parent"
+        android:src="@drawable/product"
+        android:scaleType="fitXY"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/Search_product_image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:layout_toEndOf="@+id/Search_product_image"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/Search_Product_name"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3000"
+        android:layout_toEndOf="@+id/Search_product_image"
+        android:textStyle="bold"
+        android:textSize="@dimen/_22sdp"
+        android:id="@+id/Search_Product_Price"
+        android:layout_below="@+id/Search_Product_name"
+        android:textColor="@color/black"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3000"
+        android:layout_toEndOf="@+id/Search_Product_Price"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/Search_Product_Price_real"
+        android:layout_below="@id/Search_Product_name"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a product description"
+        android:layout_toEndOf="@+id/Search_product_image"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/Search_Product_Description"
+        android:layout_below="@id/Search_Product_Price_real"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Search_Product_Description"
+        android:layout_toEndOf="@id/Search_product_image"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/RatingLayout"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

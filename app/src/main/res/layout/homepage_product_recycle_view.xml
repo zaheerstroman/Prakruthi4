@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_5sdp"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_105sdp"
+        android:id="@+id/homepage_product_recycle_view_imageview"
+        android:src="@drawable/product"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/_12sdp"
+        android:text="Plastic Cups"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/homepage_product_recycle_view_name_text"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.willy.ratingbar.RotationRatingBar
+            android:id="@+id/HomeRatingBar"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:srb_numStars="5"
+            app:srb_minimumStars="0"
+            app:srb_starWidth="@dimen/_15sdp"
+            app:srb_starHeight="@dimen/_15sdp"
+            app:srb_starPadding="@dimen/_3sdp"
+            app:srb_stepSize="1"
+            app:srb_isIndicator="true"
+            android:focusableInTouchMode="false"
+            app:srb_drawableEmpty="@drawable/outline_star_outline_24"
+            app:srb_drawableFilled="@drawable/star_vector">
+        </com.willy.ratingbar.RotationRatingBar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:id="@+id/HomeRatingCount"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 3000"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:id="@+id/Home_Product_Price"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 3000"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/Home_Product_Price_real"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378263893661",
+    "project_id": "prakruthi-afa12",
+    "storage_bucket": "prakruthi-afa12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378263893661:android:51775b58badc0f4da1c674",
+        "android_client_info": {
+          "package_name": "com.prakruthi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378263893661-60i6m98nnihj07djnttn5tql0ohrnm14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX00UV31xnxOKlZK3dRRMMQKXXO9HWtJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378263893661-60i6m98nnihj07djnttn5tql0ohrnm14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

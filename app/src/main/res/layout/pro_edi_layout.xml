@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_edit_text"
+    android:backgroundTint="@color/Secondary_less"
+    android:layout_margin="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    >
+
+    <TextView
+        android:id="@+id/my_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:singleLine="true"
+        android:layout_marginTop="05dp"
+        android:fontFamily="@font/coda"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email id"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="05dp"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/my_Name"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="05dp"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/txt_email"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txt_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Remove"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_bg_curve"
+        android:backgroundTint="#E656AEFF"
+        android:layout_below="@+id/txt_number"
+        />
+</RelativeLayout>

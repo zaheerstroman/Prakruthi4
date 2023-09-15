@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.willy.ratingbar.RotationRatingBar
+        android:id="@+id/ReviewRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:srb_numStars="5"
+        app:srb_minimumStars="0"
+        app:srb_starWidth="@dimen/_25sdp"
+        app:srb_starHeight="@dimen/_25sdp"
+        app:srb_starPadding="@dimen/_3sdp"
+        app:srb_stepSize="0.01"
+        app:srb_drawableEmpty="@drawable/outline_star_outline_24"
+        app:srb_drawableFilled="@drawable/star_vector"/>
+
+    <!--    android:text="Please enter a Reviews"-->
+
+    <EditText
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReviewRatingBar"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:hint="Please enter a Reviews"
+
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/review"
+        android:text="Post"
+        android:id="@+id/Post"/>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/otp_verification_page_background"
+    tools:context=".ui.OTP_Verification">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/otp_btn_backpress"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:background="@drawable/baseline_arrow_back_24"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txt_otp_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_240sdp"
+        android:fontFamily="@font/coda"
+        android:text="OTP VERIFICATION"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp" />
+
+
+    <TextView
+        android:id="@+id/txt_enter_otp_sent_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_otp_verification"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:fontFamily="@font/ibarra_real_nova"
+        android:text="Enter the OTP Send To "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview_4_digits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:inputType="number"
+        android:layout_below="@+id/txt_enter_otp_sent_to"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_41sdp" />
+
+    <TextView
+        android:id="@+id/tv_resend_otp_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pinview_4_digits"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="00:45"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sdp" />
+
+
+    <TextView
+        android:id="@+id/txt_dont_receive_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_resend_otp_timer"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Don't receive the code?"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_89sdp"
+
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/txt_re_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_resend_otp_timer"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@id/txt_dont_receive_code"
+        android:background="@color/white"
+        android:text=" Re-send"
+        android:textColor="@color/Primary"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_otp_submit_Registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_re_send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_31sdp"
+        android:background="@drawable/custom_shape_btn"
+        android:fontFamily="@font/ibarra_real_nova"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/_73sdp"
+        android:layout_marginEnd="@dimen/_73sdp"
+        android:textSize="@dimen/_20sdp"
+
+        />
+
+
+</RelativeLayout>

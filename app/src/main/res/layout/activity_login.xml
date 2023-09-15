@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page_background"
+    android:id="@+id/LoginLayout"
+    tools:context=".ui.Login">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/Login_Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:src="@drawable/login_logo" />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Login_Logo"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/ibarra_real_nova"
+            android:text="Login to your account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp" />
+
+        <EditText
+            android:id="@+id/edittext_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/logintext"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_19sdp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="@color/Primary"
+            android:drawableStart="@drawable/personicon"
+            android:drawablePadding="@dimen/_3sdp"
+            android:hint="Mobile No. / Email"
+            android:paddingStart="@dimen/_9sdp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <EditText
+            android:id="@+id/edittext_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/edittext_user_name"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_19sdp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="@color/Primary"
+            android:drawableStart="@drawable/vector"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Password"
+            android:paddingStart="@dimen/_9sdp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/forget_password_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_login_password"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:text="@string/Forget_password"
+            android:textColor="@color/Primary_less"
+            android:textSize="@dimen/_14sdp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RememberMe"
+            android:layout_below="@id/edittext_login_password"
+            android:layout_marginTop="@dimen/_21sdp"
+            android:text="Remember Me"
+            android:layout_marginStart="@dimen/_17sdp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
+            android:layout_width="@dimen/_191sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/forget_password_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/custom_shape_btn"
+            android:drawableEnd="@drawable/baseline_login_24"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/ibarra_real_nova"
+            android:gravity="end|center_vertical"
+            android:paddingEnd="@dimen/_50sdp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dont_have_account_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_btn"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Don't have an account?"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/register_an_account_login"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/login_btn"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_toEndOf="@id/dont_have_account_login"
+            android:text="@string/Register_an_account"
+            android:textColor="@color/Primary_less"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

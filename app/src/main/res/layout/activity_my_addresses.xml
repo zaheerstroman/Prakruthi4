@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frogetpassword_page_background"
+    tools:context=".ui.ui.profile.myaddress.MyAddresses">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_new_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a new Address"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:drawableEnd="@drawable/my_address_vector"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_below="@+id/txt_personal_address"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="@color/Secondary_less"
+        />
+
+    <TextView
+        android:id="@+id/txt_personal_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Address"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/coda"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_28sdp"
+        />
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/myAddresses_personal_address_recyclerview_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_add_new_address"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/personal_myaddress_layout" />
+
+</RelativeLayout>

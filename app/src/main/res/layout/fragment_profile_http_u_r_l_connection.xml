@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_http_url_layout_http"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_backgound">
+
+    <!--    tools:context=".ui.ui.profile.ProfileFragment"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ui.profile.ProfileFragmentHttpURLConnection"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_1_http"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="2.2">
+
+                <ImageView
+                    android:id="@+id/iv_edit_http"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/edit_icon"
+
+                    />
+            </LinearLayout>
+
+
+            <!--            <androidx.appcompat.widget.AppCompatButton-->
+            <!--                android:id="@+id/edit_btn"-->
+            <!--                android:layout_width="@dimen/_40sdp"-->
+            <!--                android:layout_height="@dimen/_40sdp"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                android:layout_marginEnd="@dimen/_5sdp"-->
+            <!--                android:background="@drawable/baseline_login_24" />-->
+
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/txt_id"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_marginTop="@dimen/_110sdp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="ID : #2256291"-->
+            <!--                android:textSize="@dimen/_30sdp" />-->
+
+            <LinearLayout
+                android:id="@+id/getProfile_id_layout_http"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_site_visit_req_LastUpdated_http"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/tv_profile_name_http"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/toolbar_color"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_site_visit_req_LastUpdated2_http"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/email_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_email_http"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_site_visit_req_LastUpdated3_http"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/contact" />
+                    <!--            user_Name_or_MobileNumber-->
+                    <TextView
+                        android:id="@+id/tv_phone_http"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/toolbar_color"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_site_visit_req_LastUpdated4_http"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:id="@+id/tv_role_http"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="2.2"
+
+                >
+
+                <!--            android:id="@+id/iv_edit1"-->
+                <!--            iv_edit-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Logout_http"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+
+                    android:background="@drawable/baseline_login_24" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:layout_width="@dimen/_40sdp"-->
+        <!--            android:layout_height="@dimen/_40sdp"-->
+        <!--            android:background="@drawable/baseline_login_24"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginEnd="@dimen/_5sdp"-->
+        <!--            android:layout_marginTop="@dimen/_5sdp"-->
+        <!--            android:id="@+id/Logout"/>-->
+
+        <!--        <androidx.appcompat.widget.AppCompatTextView-->
+        <!--            android:id="@+id/txt_id"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="@dimen/_110sdp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="ID : #2256291"-->
+        <!--            android:textSize="@dimen/_30sdp" />-->
+
+
+        <!--        android:layout_below="@+id/txt_id"-->
+        <LinearLayout
+            android:id="@+id/layout_all_http"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/layout_1_http"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="#C6E4FF"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_my_orders_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image_http"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/myorder_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Orders"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_my_address_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Address"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                app:drawableTopCompat="@drawable/my_address_vector" />
+
+            <TextView
+                android:id="@+id/tv_my_wishlist_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image_http"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/outline_favorite_24"
+                android:drawableTint="@color/Primary"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Wishlist"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+            <TextView
+                android:id="@+id/tv_qty_http"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image_http"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/quantity_icon2"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Quantity"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_payments_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image_http"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/mypayment_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="My Payment"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_service_http"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_all_http"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Services"
+            android:textSize="@dimen/_30sdp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_all_2_http"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/tv_service_http"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="#C6E4FF"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_feedback_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my_orders_Image_http"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/feedback_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Feedback"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_support_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Support"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                app:drawableTopCompat="@drawable/support_vector" />
+
+
+            <TextView
+                android:id="@+id/tv_About_us_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/aboutus_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="About Us"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+            <TextView
+                android:id="@+id/tv_privacy_policy_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/privacy_policy_vector"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Privacy Policy"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp" />
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_Terms_Conditions"-->
+            <!--                android:layout_width="@dimen/_70sdp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/_5sdp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:ellipsize="marquee"-->
+            <!--                android:marqueeRepeatLimit="marquee_forever"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="Terms And Conditions"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:translationY="-4dp"-->
+            <!--                android:layout_below="@+id/tv_feedback"-->
+
+            <!--                app:drawableTopCompat="@drawable/terms_and_conditions_icon"-->
+
+            <!--                />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_returnRefundPolicy"-->
+            <!--                android:layout_width="@dimen/_70sdp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/_5sdp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:ellipsize="marquee"-->
+            <!--                android:marqueeRepeatLimit="marquee_forever"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="return Refund Policy"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:translationY="-4dp"-->
+            <!--                android:layout_below="@+id/tv_Terms_Conditions"-->
+
+            <!--                app:drawableTopCompat="@drawable/terms_and_conditions_icon"-->
+
+            <!--                />-->
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_security"-->
+            <!--                android:layout_width="@dimen/_70sdp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/_5sdp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:ellipsize="marquee"-->
+            <!--                android:marqueeRepeatLimit="marquee_forever"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="Security"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:translationY="-4dp"-->
+            <!--                android:layout_below="@+id/tv_returnRefundPolicy"-->
+
+            <!--                app:drawableTopCompat="@drawable/terms_and_conditions_icon"-->
+
+            <!--                />-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_all_3_http"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/layout_all_2_http"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/custom_edit_text"
+            android:backgroundTint="#C6E4FF"
+            android:gravity="center"
+            android:weightSum="8">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_feedback"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/iv_my_orders_Image"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginStart="@dimen/_5sdp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:drawableTop="@drawable/feedback_vector"-->
+            <!--                android:ellipsize="marquee"-->
+            <!--                android:marqueeRepeatLimit="marquee_forever"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="Feedback"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:translationY="-4dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_support"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/_5sdp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:ellipsize="marquee"-->
+            <!--                android:marqueeRepeatLimit="marquee_forever"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="Support"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:translationY="-4dp"-->
+            <!--                app:drawableTopCompat="@drawable/support_vector" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_privacy_policy"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/tv_support"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginStart="@dimen/_5sdp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:drawableTop="@drawable/privacy_policy_vector"-->
+            <!--                android:ellipsize="marquee"-->
+            <!--                android:marqueeRepeatLimit="marquee_forever"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="Privacy Policy"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:translationY="-4dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_About_us"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/tv_privacy_policy"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginStart="@dimen/_5sdp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:drawableTop="@drawable/aboutus_vector"-->
+            <!--                android:ellipsize="marquee"-->
+            <!--                android:marqueeRepeatLimit="marquee_forever"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="About Us"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:translationY="-4dp" />-->
+
+            <TextView
+                android:id="@+id/tv_Terms_Conditions_http"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Terms and Conditions"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                android:layout_below="@+id/tv_feedback_http"
+                app:drawableTopCompat="@drawable/terms_and_conditions_icon"
+                />
+            <TextView
+                android:id="@+id/tv_returnRefundPolicy_http"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Return Refund Policy"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                android:layout_below="@+id/tv_Terms_Conditions_http"
+                app:drawableTopCompat="@drawable/privacy_policy_vector"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_security_http"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Security"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10sdp"
+                android:translationY="-4dp"
+                android:layout_below="@+id/tv_returnRefundPolicy_http"
+                app:drawableTopCompat="@drawable/mypayment_vector"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_recent_Products_http"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_all_3_http"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Recent Products"
+            android:textColor="@color/Primary"
+            android:textSize="@dimen/_20sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_view_all_http"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_all_2_http"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="View All"
+            android:textColor="@color/Green"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone" />
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/ProfileHomeProductsRecycler_http"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_recent_Products_http"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:shimmer_demo_child_count="10"
+            app:shimmer_demo_layout="@layout/homepage_product_recycle_view_loading"
+            app:shimmer_demo_layout_manager_type="grid"
+            app:spanCount="2"
+            tools:itemCount="10"
+            tools:listitem="@layout/homepage_product_recycle_view" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.profile.trackorders.TrackOrdersActivity">
+
+    <RelativeLayout
+        android:id="@+id/my_tracker_orders_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_trackorders"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/coda"
+            android:text="Track Orders"
+            android:textAlignment="center"
+            android:textColor="#00B5FF"
+            android:textSize="@dimen/_36sdp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt_order_hash"
+            android:layout_width="@dimen/_500sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_56sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_162sdp"
+            android:text="ORDER #5465185165"
+            android:textColor="#00B5FF"
+            android:textSize="@dimen/_20sdp"
+
+            />
+
+        <TextView
+            android:id="@+id/purchases_date_time"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/txt_order_hash"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:fontFamily="@font/coda"
+            android:text="Purchases : 01-06-2023 "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/my_tracker_orders_RelativeLayout2"-->
+<!--        android:layout_width="902dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+
+<!--        >-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewDivider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginTop="@dimen/_110sdp"-->
+<!--            android:background="@color/colorBlack" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewOrderPlaced"-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="@dimen/_140sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse29"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+<!--            app:layout_ConstaintStart_toStartOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="imageOrderPlaced"-->
+<!--            app:layout_constraintTop_toTopOf="imageOrderPlaced" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageOrderPlaced"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginStart="@dimen/_35sdp"-->
+<!--            android:layout_marginTop="165dp"-->
+<!--            android:contentDescription="@string/access_code"-->
+<!--            android:src="@drawable/quantity_icon1"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintStart_toEndOf="@id/viewOrderPlaced"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/viewDivider" />-->
+
+
+<!--        <View-->
+<!--            android:id="@+id/viewPlaceSupporter"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="@dimen/_136sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse277"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+<!--            app:layout_constraintBottom_toBottomOf="imageOrderPlaced"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textConfirmOrderPlaced"-->
+<!--            app:layout_constraintStart_toStartOf="imageOrderPlaced"-->
+<!--            app:layout_constraintTop_toTopOf="imageOrderPlaced"-->
+
+<!--            />-->
+
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="@+id/imageOrderPlaced"&ndash;&gt;-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textConfirmOrderPlaced"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:layout_marginStart="@dimen/_50sdp"-->
+<!--            android:layout_marginLeft="@dimen/_30sdp"-->
+
+
+<!--            android:layout_marginTop="@dimen/_120sdp"-->
+<!--            android:layout_marginEnd="@dimen/_50sdp"-->
+
+
+<!--            android:layout_toEndOf="@id/viewPlaceSupporter"-->
+<!--            android:text="@string/confirm_order"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_20sdp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="viewPlaceSupporter"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--            app:layout_constraintStart_toEndOf="imageOrderPlaced"-->
+
+<!--            />-->
+<!--        &lt;!&ndash;        android:layout_marginEnd="@id/textConfirmOrderPlaced"&ndash;&gt;-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textConfirmOrderPlaced_Date_Time_Des"-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_80sdp"-->
+<!--            android:layout_marginTop="@dimen/_150sdp"-->
+
+<!--            android:hint="12/09/2023"-->
+<!--            android:text="12/09/2023"-->
+
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+
+<!--            app:layout_constraintEnd_toEndOf="textConfirmOrderPlaced"-->
+<!--            app:layout_constraintStart_toStartOf="textConfirmOrderPlaced"-->
+<!--            app:layout_constraintTop_toBottomOf="viewPlaceSupporter" />-->
+
+
+<!--        <View-->
+<!--            android:id="@+id/viewOrderConfirmed"-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="@dimen/_240sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse29"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+
+<!--            app:layout_constraintBottom_toBottomOf="imageOrderConfirmed"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/imageOrderConfirmed"-->
+
+<!--            />-->
+<!--        &lt;!&ndash;        app:layout_constraintTop_toTopOf="@id/textProductPreparedOrderConfirmed"&ndash;&gt;-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageOrderConfirmed"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginStart="@dimen/_35sdp"-->
+<!--            android:layout_marginTop="300dp"-->
+<!--            android:contentDescription="@string/access_code"-->
+<!--            android:src="@drawable/email_icon"-->
+
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintStart_toEndOf="@id/viewOrderConfirmed"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/imageOrderPlaced" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewOrderConfirmedSupporter"-->
+<!--            android:layout_width="28dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="@dimen/_235sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse277"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+
+<!--            app:layout_constraintBottom_toBottomOf="imageOrderConfirmed"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/imageOrderConfirmed"-->
+<!--            app:layout_constraintStart_toStartOf="@id/imageOrderConfirmed"-->
+<!--            app:layout_constraintTop_toTopOf="@id/imageOrderConfirmed" />-->
+
+<!--        />-->
+
+
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="@id/textProductPreparedOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="@id/textProductPreparedOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintTop_toTopOf="@id/textProductPreparedOrderConfirmed"&ndash;&gt;-->
+
+
+<!--        &lt;!&ndash;        textOrderConfirmed&ndash;&gt;-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textProductPreparedOrderConfirmed"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:layout_marginLeft="@dimen/_40sdp"-->
+<!--            android:layout_marginTop="@dimen/_220sdp"-->
+<!--            android:layout_marginEnd="@id/textConfirmOrderPlaced"-->
+<!--            android:layout_marginstart="@dimen/10sdp"-->
+
+
+<!--            android:layout_toEndOf="@id/viewPlaceSupporter"-->
+<!--            android:text="Product Prepared"-->
+<!--            android:textColor="@color/black"-->
+
+<!--            android:textSize="@dimen/_20sdp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="viewOrderConfirmedSupporter"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--            app:layout_constraintStart_toEndOf="imageOrderConfirmed"-->
+
+<!--            />-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toEndOf="viewOrderConfirmedSupporter"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toEndOf="imageOrderConfirmed"&ndash;&gt;-->
+
+
+<!--        &lt;!&ndash;        android:text="Your order has been confirmed"&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/djfndgfhh2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:layout_marginLeft="@dimen/_80sdp"-->
+<!--            android:layout_marginTop="@dimen/_250sdp"-->
+
+<!--            android:hint="12/09/2023"-->
+<!--            android:text="12/09/2023"-->
+
+
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="textProductPreparedOrderConfirmed"-->
+<!--            app:layout_constraintStart_toStartOf="@id/textProductPreparedOrderConfirmed"-->
+
+<!--            app:layout_constraintTop_toBottomOf="@id/viewOrderConfirmedSupporter"-->
+
+<!--            />-->
+
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="viewPlaceSupporter"&ndash;&gt;-->
+
+<!--        <View-->
+<!--            android:id="@+id/line"-->
+<!--            android:layout_width="02dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_marginStart="28dp"-->
+<!--            android:layout_marginTop="@dimen/_140sdp"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:background="@drawable/tracker_line6"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+
+<!--            app:layout_constraintButtom_toTopOf="@id/viewOrderConfirmed"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/viewOrderPlaced"-->
+<!--            app:layout_constraintStart_toStartOf="@id/viewOrderPlaced"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/viewOrderPlaced" />-->
+
+<!--        &lt;!&ndash;        //imp&ndash;&gt;-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewOrderProcessed"-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="@dimen/_350sdp"-->
+<!--            android:layout_marginBottom="4dp"-->
+
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse29"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageOrderProcessed"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageOrderProcessed"-->
+
+<!--            />-->
+
+<!--        &lt;!&ndash;        app:layout_constraintButtom_toTopOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="@id/viewOrderPlaced"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="@id/viewOrderPlaced"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintTop_toBottomOf="@id/viewOrderPlaced"&ndash;&gt;-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageOrderProcessed"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginStart="@dimen/_37sdp"-->
+<!--            android:layout_marginTop="@dimen/_350sdp"-->
+<!--            android:contentDescription="Prakruthi"-->
+<!--            android:src="@drawable/mypayment_vector"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/viewOrderProcessed"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageOrderConfirmed" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewProcessedSupporter"-->
+<!--            android:layout_width="26dp"-->
+<!--            android:layout_height="26dp"-->
+<!--            android:layout_marginStart="17dp"-->
+<!--            android:layout_marginTop="@dimen/_347sdp"-->
+<!--            android:layout_marginBottom="4dp"-->
+
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse277"-->
+
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageOrderProcessed"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/imageOrderProcessed"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/imageOrderProcessed"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageOrderProcessed" />-->
+
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textOrderProcessed"-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginStart="100dp"-->
+<!--            android:layout_marginTop="@dimen/_338sdp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:text="Shipped"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"-->
+
+<!--            app:layout_constraintBottom_toTopOf="@+id/viewProcessedSupporter"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageOrderProcessed"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_80sdp"-->
+<!--            android:layout_marginTop="470dp"-->
+
+<!--            android:text="12/09/2023"-->
+
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="textOrderProcessed"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textOrderProcessed"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/viewProcessedSupporter"-->
+
+<!--            />-->
+<!--        &lt;!&ndash;        android:text="We are preparing your order"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="@+id/viewProcessedSupporter"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/textOrderProcessed"&ndash;&gt;-->
+
+<!--        <View-->
+<!--            android:layout_width="02dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_marginStart="28dp"-->
+
+<!--            android:layout_marginTop="@dimen/_250sdp"-->
+
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:background="@drawable/tracker_line6"-->
+
+<!--            app:layout_constraintBottom_toTopOf="@id/viewOrderProcessed"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/viewOrderConfirmed"-->
+<!--            app:layout_constraintStart_toStartOf="@id/viewOrderConfirmed"-->
+<!--            app:layout_constraintTop_toButtomOf="@id/viewOrderConfirmed"-->
+
+<!--            />-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewOrderReady"-->
+<!--            android:layout_width="22dp"-->
+<!--            android:layout_height="22dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="@dimen/_450sdp"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:alpha="0.5"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse29"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+
+<!--            app:layout_constrainBottom_toBottomOf="@+id/imageOrderReady"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageOrderReady"-->
+
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageOrderReady"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginStart="@dimen/_40sdp"-->
+<!--            android:layout_marginTop="@dimen/_440sdp"-->
+<!--            android:alpha="0.5"-->
+<!--            android:contentDescription="Aakruti"-->
+<!--            android:src="@drawable/my_address_vector"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/viewOrderReady"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageOrderProcessed" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewReadySupporter"-->
+<!--            android:layout_width="28dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_marginStart="@dimen/_15sdp"-->
+<!--            android:layout_marginTop="@dimen/_448sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse277"-->
+<!--            app:layout_constrainTop_toTopOf="@+id/imageOrderReady"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/imageOrderReady"-->
+<!--            app:layout_constriantBottom_toBottomOf="@+id/imageOrderReady" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textReadyToPickupOutForDelivery"-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="100dp"-->
+<!--            android:layout_marginTop="560dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:text="@string/ready_to_pickup"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/viewReadySupporter"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageOrderReady" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_75sdp"-->
+<!--            android:layout_marginTop="590dp"-->
+
+<!--            android:alpha="0.5"-->
+<!--            android:text="12/09/2023"-->
+
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textReadyToPickupOutForDelivery"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textReadyToPickupOutForDelivery"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/viewReadySupporter"-->
+
+<!--            />-->
+
+
+
+<!--        <View-->
+<!--            android:id="@+id/linedown"-->
+<!--            android:layout_width="02dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_marginStart="28dp"-->
+<!--            android:layout_marginTop="@dimen/_360sdp"-->
+<!--            android:layout_marginBottom="4dp"-->
+
+<!--            android:background="@drawable/tracker_line6"-->
+
+<!--            app:layout_constraintBottom_toTopOf="@id/viewOrderReady"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/viewOrderProcessed"-->
+<!--            app:layout_constraintStart_toStartOf="@id/viewOrderProcessed"-->
+<!--            app:layout_constraintTop_toButtomOf="@id/viewOrderProcessed"-->
+
+<!--            />-->
+
+<!--        &lt;!&ndash;        app:layout_constraintTop_toButtomOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintBottom_toTopOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        viewOrderPlaced&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        app:layout_constraintButtom_toTopOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintEnd_toEndOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintStart_toStartOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+<!--        &lt;!&ndash;        app:layout_constraintTop_toBottomOf="@id/viewOrderConfirmed"&ndash;&gt;-->
+
+
+<!--        <View-->
+<!--            android:id="@+id/viewOrderPlaced23"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="@dimen/_535sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse29"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+<!--            app:layout_ConstaintStart_toStartOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="imageOrderPlaced"-->
+<!--            app:layout_constraintTop_toTopOf="imageOrderPlaced" />-->
+
+
+<!--        <View-->
+<!--            android:id="@+id/viewPlaceSupporter23"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="@dimen/_530sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse277"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+<!--            app:layout_constraintBottom_toBottomOf="imageOrderPlaced"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/textConfirmOrderPlaced"-->
+<!--            app:layout_constraintStart_toStartOf="imageOrderPlaced"-->
+<!--            app:layout_constraintTop_toTopOf="imageOrderPlaced"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textShipped"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_45sdp"-->
+<!--            android:layout_marginTop="@dimen/_510sdp"-->
+<!--            android:layout_marginEnd="@id/textProductPreparedOrderConfirmed"-->
+<!--            android:layout_toEndOf="@id/viewOrderConfirmedSupporter"-->
+<!--            android:text="Delivered Shipped"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="viewOrderConfirmedSupporter"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="viewOrderConfirmedSupporter"-->
+
+<!--            />-->
+
+<!--        &lt;!&ndash;        android:text="Your order has been confirmed"&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/djfndgfhh3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_80sdp"-->
+<!--            android:layout_marginTop="@dimen/_540sdp"-->
+<!--            android:hint="12/09/2023"-->
+<!--            android:text="12/09/2023"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/textShipped"-->
+<!--            app:layout_constraintEnd_toEndOf="textShipped"-->
+
+<!--            app:layout_constraintStart_toStartOf="viewOrderConfirmedSupporter" />-->
+
+
+<!--        <View-->
+<!--            android:id="@+id/viewOrderProcesseddown"-->
+<!--            android:layout_width="02dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_marginStart="27dp"-->
+<!--            android:layout_marginTop="@dimen/_470sdp"-->
+<!--            android:layout_marginBottom="4dp"-->
+
+<!--            android:background="@drawable/tracker_line6"-->
+
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+
+<!--            app:layout_constraintBottom_toTopOf="@id/viewShippedProductPrepared"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/viewShippedProductPrepared"-->
+<!--            app:layout_constraintTop_toButtomOf="@id/viewOrderConfirmed"-->
+
+<!--            />-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="@id/viewShippedProductPrepared"&ndash;&gt;-->
+
+
+<!--        <View-->
+<!--            android:id="@+id/viewShippedProductPrepared"-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="@dimen/_524sdp"-->
+<!--            android:background="@drawable/confirmed_product_prepared_ellipse29"-->
+<!--            android:outlineAmbientShadowColor="@color/Green"-->
+<!--            app:layout_constraintBottom_toBottomOf="imageOrderConfirmed"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/textShipped" />-->
+
+
+<!--&lt;!&ndash;        <View&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/viewShippedOrderConfirmedSupporter"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="28dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="28dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginStart="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="@dimen/_520sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/confirmed_product_prepared_ellipse277"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:outlineAmbientShadowColor="@color/Green"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="imageOrderConfirmed"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="@id/textShipped"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="@id/textShipped"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toTopOf="@id/textShipped" />&ndash;&gt;-->
+
+
+
+<!--    </RelativeLayout>-->
+
+
+</RelativeLayout>
